@@ -1,14 +1,17 @@
+/*Sections-----------*/
 body {
     background-color: #EEE;
-    font-family:'Times New Roman', Times, serif;
-    text-align:justify;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
 }
 
 a {
     text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -21,8 +24,8 @@ h1, h2, h3 {
 
 #header {
     background-color: #66CCFF;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
     padding: 10px;
 }
 
@@ -30,64 +33,71 @@ h1, h2, h3 {
     padding: 10px;
 }
 
+/*Navigation---------------------------------*/
+
 #nav {
     width: 180px;
-    float:left;
+    float: left;
 }
 
-#nav ul{
+#nav ul {
     list-style-type: none;
     padding: 0;
-    
+
 }
 
-#nav .selected{
+#nav .selected {
     font-weight: bold;
 }
 
 #main {
     width: 600px;
-    float:right;
+    float: right;
 }
 
 #footer {
-    clear:both;
+    clear: both;
     padding: 10px;
     background-color: #999999;
     color: white;
-    text-align:right;
+    text-align: right;
 }
 
-.post	{
-	margin-top: 2px;
-	margin-bottom: 2px;
+.post {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
-caption	{
-	color: black;
-	margin-bottom: 5px;
-	font-weight: bold;
-	text-transform: uppercase;
+caption {
+    color: black;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-table  {
-	border-collapse:collapse;
-	border: 1px solid #666;
+/*tables---------------------------------------*/
+table {
+    border-collapse: collapse;
+    border: 1px solid #666;
 }
-th	{
-	background-color: #666;
-	padding: 8px 2px 2px 2px;
-	border: 1px solid #FFF;
-	color: #FFF;
+
+th {
+    background-color: #666;
+    padding: 8px 2px 2px 2px;
+    border: 1px solid #FFF;
+    color: #FFF;
 }
-td	{
-	border: 1px solid #666;
-	padding: 2px;
+
+td {
+    border: 1px solid #666;
+    padding: 2px;
 }
+
 td:empty {
-	background-color: #ccc;
+    background-color: #ccc;
 }
-small	{
-	font-size: 14px;
-	line-height: 15px;
+
+small {
+    font-size: 14px;
+    line-height: 15px;
 }
