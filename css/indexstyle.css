@@ -1,26 +1,9 @@
 /*Sections-----------*/
 body {
     background-color: #EEE;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Catamaran';
     text-align: justify;
     font-size:1.2em;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-    margin: 0;
-}
-
-#container {
-    background-color: white;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #header {
@@ -30,43 +13,30 @@ h3 {
     padding: 10px;
 }
 
-#content {
-    padding: 10px;
-}
-
-/*Navigation---------------------------------*/
-
-#nav {
-    width: 180px;
-    float: left;
-}
-
-#nav ul {
-    list-style-type: none;
-    padding: 0;
-
-}
-
-#nav .selected {
-    font-weight: bold;
-}
-
-#main {
-    width: 600px;
-    float: right;
-}
-
 #footer {
-    clear: both;
+    clear:both;
     padding: 10px;
     background-color: #999999;
     color: white;
-    text-align: right;
+    text-align:right;
 }
 
-.post {
-    margin-top: 2px;
-    margin-bottom: 2px;
+#main {
+    margin-left: 20%;
+    padding-right: 1%;
+}
+
+/*contents--------------*/
+a {
+    text-decoration: none;
+}
+
+#container {
+    background-color: white;
+}
+
+#content {
+    padding: 15px;
 }
 
 caption {
@@ -76,10 +46,75 @@ caption {
     text-transform: uppercase;
 }
 
+.post	{
+    border-style: outset;
+	padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+img{
+    display: hidden;
+}
+
+/*Headers------------------------------------*/
+h1	{
+	color: #0063A6;
+	font-size: 36px;
+	line-height: 50px;
+    margin: 0px;
+}
+h2	{
+	font-size: 24px;
+	line-height: 35px;
+	color: #0063A6;
+    margin: 0px;
+}
+h3 	{
+	color: #F14A29;
+	font-size: 20px;
+	line-height: 30px;
+    margin: 0px;
+}
+
+
+/*Navigation---------------------------------*/
+
+#nav {
+    float: top;
+    text-align: center;
+}
+
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+#nav .selected{
+    font-weight: bold;
+}
+
+@media (min-width: 60em) {
+    #nav {
+        float: left;
+        width: 180px;
+        padding-left: 2%;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #nav {
+        float: left;
+        width: 180px;
+        padding-left: 2%;
+    }
+}
 /*tables---------------------------------------*/
 table {
     border-collapse: collapse;
     border: 1px solid #666;
+    display: none;
 }
 
 th {
@@ -101,4 +136,13 @@ td:empty {
 small {
     font-size: 14px;
     line-height: 15px;
+}
+
+@media only screen and (min-width: 1100px){
+    table {
+        display: contents;
+    }
+    img{
+        display: contents;
+    }
 }

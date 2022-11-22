@@ -6,6 +6,7 @@
 		<title>Learning Journal</title>
 		<meta name="viewport" content="width=device-width, initial scale=1">
 		<link href="css/indexstyle.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
 		<link href="css/normalize.css" rel="stylesheet">
 	</head>
 
@@ -24,13 +25,14 @@
 					<h3>Navigation</h3>
 					<ul>
 						<li>
-							<!--Links to the Index page/tutorial page-->
-							<a href="tutorial.html">Tutorial</a>
-						</li>
-						<li>
 							<!--This is telling the directory that this is the current page that is selected therefore it should do nothing when clicked on-->
 							<a class="selected" href="">Learning Journal</a>
 						</li>
+						<li>
+							<!--Links to the Index page/tutorial page-->
+							<a href="tutorial.html">Tutorial</a>
+						</li>
+
 						<li>
 							<!--This links to the contact me page-->
 							<a href="contact.html">Contact me</a>
@@ -40,283 +42,293 @@
 				<!--This is where the content for the Page starts, it uses a Div id so that it can be customized using the CSS stylesheet that will go with this site-->
 				<div id="main">
 					<h2>
-						<u>Welcome to my learning journal!</u>
+						Weekly Posts
 					</h2>
+					<!--Week 6 post-->
+					<article class="post">
+						<h3>
+							Week 6
+						</h3>
+					</article>
+					<!--Week 5 post-->
+					<article class="post">
+						<h3>
+							Week 5
+						</h3>
+						<p>Published on <time datetime="2022-11-03">
+								<strong>November 03, 2022</strong>
+							</time>
+						</p>
+						<p>In this week of labs, we looked at starting to create the page for tutorials, and how to
+							specify font families and a fall back for if the font cannot be displayed correctly,
+							this is done in css by doing the following example:<br>
+							<code>
+								body{<br>
+								font-family: georgia, "times new roman", Times, serif;<br>
+								}<br>
+							</code>
+							<p>To ensure that text can be correctly displayed on all devices that are able to
+								connect to the website, you should always include system default fonts so that in
+								the event that the font is unable to be retrieved from the web server or fonts source
+								we are still able to display content that should be on the page.
+							</p>
+						</p>
+					</article>
+					<!--Week 4 post-->
+					<article class="post">
+						<h3>
+							Week 4
+						</h3>
+						<p>Published on <time datetime="2022-10-27">
+								<strong>October 27, 2022</strong>
+							</time>
+						</p>
+						<p>This week in Lectures and Labs we looked at creating the CSS (stylesheet) for the site,
+							this is used to give the website actual structure, we do this by using the language CSS
+							which is a declarative language where we call on things such as:
+						</p>
+						<ol>
+							<li>Class IDs that we have layed out in the HTML code.</li>
+							<li>Div tags that we have used to divide the HTML pages into sections so that we can
+								later style them individually.</li>
+							<li>Tags that are used in the code for example <code>h1</code>.</li>
+						</ol>
+						<p>Why do we do this? Well to make the website look pretty, without CSS the site will remain
+							unformatted and there will be no structure to the site at all, so by using CSS we are
+							able to control the structure of the page, in addition to structure it also allows us to
+							customize the site with different fonts of our choice be it a serif or sans serif style
+							font even fonts that are not native to PCs and Mobile devices, we can change the color
+							of backgrounds and control things like where things such as text are placed on the site.
+						</p>
+					</article>
+					<!--Week 3 post-->
+					<article class="post">
+						<h3>
+							Week 3
+						</h3>
+						<p>Published on <time datetime="2022-10-21">
+								<strong>October 21, 2022</strong>
+							</time>
+						</p>
+						<p>In this week we looked at another form of list, this is called a description list and
+							this is used to add a glossary of definitions or descriptions of items, to do this we
+							start of using the tag <code>dl</code> and that will be the tag that we use to start
+							nesting the other tags those being: </p>
+						<dl>
+							<dt>
+								<strong>
+									<code>dt</code>
+								</strong>
+							</dt>
+							<dd>This is what defines a term or the name of something in a description list or
+								<code>dl</code>
+							</dd>
+							<dt>
+								<strong>
+									<code>dd</code>
+								</strong>
+							</dt>
+							<dd>The dd tag is used with the <code>dl</code>and <code>dt</code>this is used to give
+								descriptions of the items in the description list. </dd>
+						</dl>
+						<p>To show how the tags are used I will take a screenshot of the code that was used to make
+							the description list above so that an example is here to be seen</p>
+						<figure>
+							<img alt="" src="images/screenshot_2_list_code.png" style="width: 500px; height: 100px;" />
+							<figcaption>This is a screenshot of the code used to create the description list that is
+								found in the third entry of the Learning journal. <br />
+								<small>Screenshot &copy; Harry Caldwell</small>
+							</figcaption>
+						</figure>
+						<p>In addition to this we also looked at creating a table on the webpage, as an example for
+							this site I am going to use my Timetable to show how they can be used in the website.
+						</p>
+						<!--Start of table used to create my Uni timetable as an example-->
+						<table border=1>
+							<caption>My timetable</caption>
+							<tbody>
+								<tr>
+									<th>Day/time</th>
+									<th>Monday</th>
+									<th>Tuesday</th>
+									<th>Wednesday</th>
+									<th>Thursday</th>
+									<th>Friday</th>
+								</tr>
+								<tr>
+									<td>9-10am</td>
+									<td></td>
+									<td></td>
+									<td>Working in the computing industry (Tutorial)</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>10-11am</td>
+									<td></td>
+									<td>Working in the computing industry (Lecture)</td>
+									<td>Introduction to programming (Lab)</td>
+									<td>Introduction to web dev (Lab)</td>
+									<td>Computing technologies (Lab)</td>
+								</tr>
+								<tr>
+									<td>11-12pm</td>
+									<td></td>
+									<td>Introduction to web development (Lecture)</td>
+									<td>Introduction to cyber security (Lab)</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>12-1pm</td>
+									<td></td>
+									<td></td>
+									<td>Introduction to cyber security (Lab)</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>1-2pm</td>
+									<td>Introduction to programming (lecture)</td>
+									<td>Introduction to programming (seminar)</td>
+									<td></td>
+									<td>Computing technologies (lecture)</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2-3pm</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>3-4pm</td>
+									<td>Introduction to cyber security (lecture)</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>4-5pm</td>
+									<td>Introduction to cyber security (lecture)</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						<!--End of table-->
+						<p>In addition to this I also learnt about citing sources in HTML using the
+							<code>blockquote</code>, <code>cite</code>tags, these allow us to cite sources correctly
+							however if you read from this quote below:</p>
+						<blockquote>
+							<p>It's worth noting that the W3C specification says that a reference to a creative
+								work, as included within a <code>cite</code> element, may include the name of the
+								work's author. However, the WHATWG specification for <code>cite</code> says the
+								opposite: that a person's name must never be included, under any circumstances.</p>
+							<cite>
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">MDN Web
+									Docs</a>
+							</cite>
+						</blockquote>
+						<p>In the two different specifications W3C and WHATWG they oppose each other saying that
+							authors names should be included in citations in W3C but in WHATWG they say they must
+							never be included, for the sake of references on this webpage authors names will be
+							included where possible if unavailable a link will be provided to where the information
+							was acquired </p>
+
+					</article>
+					<!--Week 2 post-->
+					<article class="post">
+						<h3>
+							Week 2
+						</h3>
+						<p>Published on <time datetime="2022-10-13">
+								<strong>October 13, 2022</strong>
+							</time>
+						</p>
+						<p>In this week, I learnt about the <code>time</code> tag, this allowed me to create
+							ISO-8601 format dates for when these journal articles are published, to give importance
+							to the date I also used the strong tag to make the date bold to make it draw readers
+							attention so that they could better see the learning progression. Further more in the
+							Lab I learnt about creating Lists using the <code>li</code>, <code>ul</code>,
+							<code>ol</code> tags that stand for: </p>
+						<ul>
+							<li>list items(li)</li>
+							<li>Unordered list(ul)</li>
+							<li>Ordered list(ol)</li>
+						</ul>
+						<p>The list items tag use is to be done when nested within the unordered or ordered list
+							tags to show this I will take an example from this very page to show how it is
+							implemented into the code</p>
+						<figure>
+							<!--This links to a screenshot that is stored on the web server-->
+							<img alt="" src="images/screenshot_1_list_code.png" style="width: 500px; height: 100px;" />
+							<figcaption>This is a screenshot of the code used to create the list that is found in
+								the first entry of the Learning journal. <br />
+								<small>Screenshot &copy; Harry Caldwell</small>
+							</figcaption>
+						</figure>
+					</article>
 					<!--Week one post starts-->
-					<article>
-						<header class="post">
-							<h3>
-								<u>Week 1</u>
-							</h3>
-							<p>Published on <time datetime="2022-10-06">
-									<strong>October 6, 2022</strong>
-								</time>
-							</p>
-							<p>Week 1 is the beginning of the module CI435, This module is to introduce students to web
-								development and to create skills needed to program in HTML and CSS, and at some point
-								Javascript will be introduced, in the first week we gained access to the web server and
-								created the basic file system for storing Cascading style sheets(CSS) and assets such
-								as images. In this week we started to set up our site and domain, we did this by:</p>
-							<ol>
-								<li>Logging into brighton domain</li>
-								<li>Navigating to the file manager</li>
-								<li>Creating the file directory in the Public Html folder</li>
-								<li>Once This was done we would create three HTML files these would be the Index page,
-									Contact Me page and the Learning journal page.</li>
-							</ol>
-							<p>After creating the directories, the file system looked like this:</p>
-							<figure>
-								<img alt="" src="images/file_system.png" style="width: 500px; height: 200px;" />
-								<figcaption>This is a screenshot of the code used to create the list that is found in
-									the first entry of the Learning journal. <br />
-									<small>Screenshot &copy; Harry Caldwell</small>
-								</figcaption>
-							</figure>
-							<p>To help with producing the skills needed, we are using MDN web docs which has tutorials
-								and key recourses needed to produce the skills needed to create the website with correct
-								syntax that site can be found here
-								<!--This provides a link to the user so that they are able to access MDN Web docs-->
-								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN web docs</a>.
-							</p>
-							<figure>
-								<!--This provides a link to the user so that they are able to access MDN Web docs-->
-								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">
-									<img src="images/MDN_Web_Docs.png" style="width: 300px; height: 60px;" />
-								</a>
-							</figure>
-						</header>
+					<article class="post">
+						<h3>
+							Week 1
+						</h3>
+						<p>Published on <time datetime="2022-10-06">
+								<strong>October 6, 2022</strong>
+							</time>
+						</p>
+						<p>Week 1 is the beginning of the module CI435, This module is to introduce students to web
+							development and to create skills needed to program in HTML and CSS, and at some point
+							Javascript will be introduced, in the first week we gained access to the web server and
+							created the basic file system for storing Cascading style sheets(CSS) and assets such
+							as images. In this week we started to set up our site and domain, we did this by:</p>
+						<ol>
+							<li>Logging into brighton domain</li>
+							<li>Navigating to the file manager</li>
+							<li>Creating the file directory in the Public Html folder</li>
+							<li>Once This was done we would create three HTML files these would be the Index page,
+								Contact Me page and the Learning journal page.</li>
+						</ol>
+						<p>After creating the directories, the file system looked like this:</p>
+						<figure>
+							<img alt="" src="images/file_system.png" style="width: 500px; height: 200px;" />
+							<figcaption>This is a screenshot of the code used to create the list that is found in
+								the first entry of the Learning journal. <br />
+								<small>Screenshot &copy; Harry Caldwell</small>
+							</figcaption>
+						</figure>
+						<p>To help with producing the skills needed, we are using MDN web docs which has tutorials
+							and key recourses needed to produce the skills needed to create the website with correct
+							syntax that site can be found here
+							<!--This provides a link to the user so that they are able to access MDN Web docs-->
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN web docs</a>.
+						</p>
+						<figure>
+							<!--This provides a link to the user so that they are able to access MDN Web docs-->
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">
+								<img src="images/MDN_Web_Docs.png"/>
+							</a>
+						</figure>
 					</article>
-					<!--Week 1 post ends and week 2 post starts-->
-					<article>
-						<header class="post">
-							<h3>
-								<u>Week 2</u>
-							</h3>
-							<p>Published on <time datetime="2022-10-13">
-									<strong>October 13, 2022</strong>
-								</time>
-							</p>
-							<p>In this week, I learnt about the <code>time</code> tag, this allowed me to create
-								ISO-8601 format dates for when these journal articles are published, to give importance
-								to the date I also used the strong tag to make the date bold to make it draw readers
-								attention so that they could better see the learning progression. Further more in the
-								Lab I learnt about creating Lists using the <code>li</code>, <code>ul</code>,
-								<code>ol</code> tags that stand for: </p>
-							<ul>
-								<li>list items(li)</li>
-								<li>Unordered list(ul)</li>
-								<li>Ordered list(ol)</li>
-							</ul>
-							<p>The list items tag use is to be done when nested within the unordered or ordered list
-								tags to show this I will take an example from this very page to show how it is
-								implemented into the code</p>
-							<figure>
-								<!--This links to a screenshot that is stored on the web server-->
-								<img alt="" src="images/screenshot_1_list_code.png"
-									style="width: 500px; height: 100px;" />
-								<figcaption>This is a screenshot of the code used to create the list that is found in
-									the first entry of the Learning journal. <br />
-									<small>Screenshot &copy; Harry Caldwell</small>
-								</figcaption>
-							</figure>
-						</header>
-					</article>
-					<!--Week 2 post ends and week 3 post starts-->
-					<article>
-						<header class="post">
-							<h3>
-								<u>Week 3</u>
-							</h3>
-							<p>Published on <time datetime="2022-10-21">
-									<strong>October 21, 2022</strong>
-								</time>
-							</p>
-							<p>In this week we looked at another form of list, this is called a description list and
-								this is used to add a glossary of definitions or descriptions of items, to do this we
-								start of using the tag <code>dl</code> and that will be the tag that we use to start
-								nesting the other tags those being: </p>
-							<dl>
-								<dt>
-									<strong>
-										<code>dt</code>
-									</strong>
-								</dt>
-								<dd>This is what defines a term or the name of something in a description list or
-									<code>dl</code>
-								</dd>
-								<dt>
-									<strong>
-										<code>dd</code>
-									</strong>
-								</dt>
-								<dd>The dd tag is used with the <code>dl</code>and <code>dt</code>this is used to give
-									descriptions of the items in the description list. </dd>
-							</dl>
-							<p>To show how the tags are used I will take a screenshot of the code that was used to make
-								the description list above so that an example is here to be seen</p>
-							<figure>
-								<img alt="" src="images/screenshot_2_list_code.png"
-									style="width: 500px; height: 100px;" />
-								<figcaption>This is a screenshot of the code used to create the description list that is
-									found in the third entry of the Learning journal. <br />
-									<small>Screenshot &copy; Harry Caldwell</small>
-								</figcaption>
-							</figure>
-							<p>In addition to this we also looked at creating a table on the webpage, as an example for
-								this site I am going to use my Timetable to show how they can be used in the website.
-							</p>
-							<!--Start of table used to create my Uni timetable as an example-->
-							<table border=1>
-								<caption>My timetable</caption>
-								<tbody>
-									<tr>
-										<th>Day/time</th>
-										<th>Monday</th>
-										<th>Tuesday</th>
-										<th>Wednesday</th>
-										<th>Thursday</th>
-										<th>Friday</th>
-									</tr>
-									<tr>
-										<td>9-10am</td>
-										<td></td>
-										<td></td>
-										<td>Working in the computing industry (Tutorial)</td>
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>10-11am</td>
-										<td></td>
-										<td>Working in the computing industry (Lecture)</td>
-										<td>Introduction to programming (Lab)</td>
-										<td>Introduction to web dev (Lab)</td>
-										<td>Computing technologies (Lab)</td>
-									</tr>
-									<tr>
-										<td>11-12pm</td>
-										<td></td>
-										<td>Introduction to web development (Lecture)</td>
-										<td>Introduction to cyber security (Lab)</td>
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>12-1pm</td>
-										<td></td>
-										<td></td>
-										<td>Introduction to cyber security (Lab)</td>
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>1-2pm</td>
-										<td>Introduction to programming (lecture)</td>
-										<td>Introduction to programming (seminar)</td>
-										<td></td>
-										<td>Computing technologies (lecture)</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>2-3pm</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>3-4pm</td>
-										<td>Introduction to cyber security (lecture)</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>4-5pm</td>
-										<td>Introduction to cyber security (lecture)</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr>
-								</tbody>
-							</table>
-							<!--End of table-->
-							<p>In addition to this I also learnt about citing sources in HTML using the
-								<code>blockquote</code>, <code>cite</code>tags, these allow us to cite sources correctly
-								however if you read from this quote below:</p>
-							<blockquote>
-								<p>It's worth noting that the W3C specification says that a reference to a creative
-									work, as included within a <code>cite</code> element, may include the name of the
-									work's author. However, the WHATWG specification for <code>cite</code> says the
-									opposite: that a person's name must never be included, under any circumstances.</p>
-								<cite>
-									<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">MDN Web
-										Docs</a>
-								</cite>
-							</blockquote>
-							<p>In the two different specifications W3C and WHATWG they oppose each other saying that
-								authors names should be included in citations in W3C but in WHATWG they say they must
-								never be included, for the sake of references on this webpage authors names will be
-								included where possible if unavailable a link will be provided to where the information
-								was acquired </p>
-						</header>
-					</article>
-					<!--Week 3 post ends and week 4 post starts-->
-					<article>
-						<header class="post">
-							<h3>
-								<u>Week 4</u>
-							</h3>
-							<p>Published on <time datetime="2022-10-27">
-									<strong>October 27, 2022</strong>
-								</time>
-							</p>
-							<p>This week in Lectures and Labs we looked at creating the CSS (stylesheet) for the site,
-								this is used to give the website actual structure, we do this by using the language CSS
-								which is a declarative language where we call on things such as:
-							</p>
-							<ol>
-								<li>Class IDs that we have layed out in the HTML code.</li>
-								<li>Div tags that we have used to divide the HTML pages into sections so that we can
-									later style them individually.</li>
-								<li>Tags that are used in the code for example <code>h1</code>.</li>
-							</ol>
-							<p>Why do we do this? Well to make the website look pretty, without CSS the site will remain
-								unformatted and there will be no structure to the site at all, so by using CSS we are
-								able to control the structure of the page, in addition to structure it also allows us to
-								customize the site with different fonts of our choice be it a serif or sans serif style
-								font even fonts that are not native to PCs and Mobile devices, we can change the color
-								of backgrounds and control things like where things such as text are placed on the site.
-							</p>
-					</article>
-					<!--The end of week 4 start of week 5-->
-					<article>
-						<header class="post">
-							<h3>
-								<u>Week 5</u>
-							</h3>
-							<p>Published on <time datetime="2022-11-03">
-									<strong>November 03, 2022</strong>
-								</time>
-							</p>
-							<p>In this week of labs, we looked at starting to create the page for tutorials, and how to
-								specify font families and a fall back for if the font cannot be displayed correctly,
-								this is done in css by doing the following example:<br>
-								<code>
-									body{<br>
-									font-family: georgia, "times new roman", Times, serif;<br>
-									}<br>
-								</code>
-								<p>To ensure that text can be correctly displayed on all devices that are able to
-									connect to the website, you should always include system default fonts so that in
-									the event that the font is unable to be retrieved from the web server or fonts source
-									we are still able to display content that should be on the page.
-								</p>
-							</p>
-					</article>
+
+					<a id=reference>
+						<h3>References</h3>
+					</a>
+					<ul>
+						<li><a
+								href="https://fonts.google.com/specimen/Catamaran?category=Sans+Serif,Display,Handwriting,Monospace">Google
+								Fonts (Catamaran)</li>
+						<li><a href="https://www.w3schools.com/html/default.asp">w3schools</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs (HTML)</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs (CSS)</a></li>
+					</ul>
+
 					<p>
 						<!--Clicking on this link will take the user to the top of the page-->
 						<a href="#top">Go to top</a>
