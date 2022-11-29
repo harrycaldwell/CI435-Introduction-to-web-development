@@ -3,34 +3,47 @@ body {
     background-color: #EEE;
     font-family: 'Catamaran';
     text-align: justify;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
-
+/*header-------------*/
 #header {
     background-color: #66CCFF;
-    color: white;
     text-align: center;
     padding: 10px;
 }
 
+#header h1{
+    color:black;
+}
+
+/*End of header-------------*/
 #footer {
-    clear:both;
+    clear: both;
     padding: 10px;
     background-color: #999999;
     color: white;
-    text-align:right;
+    text-align: right;
 }
 
 #main {
     margin-left: 20%;
     padding-right: 1%;
 }
-
-/*contents--------------*/
-a {
+/*links-----------------*/
+a:link{
     text-decoration: none;
+    color: #0090D2;
 }
 
+a:active{
+    text-decoration:underline;
+}
+
+a:hover{
+   color:#0063A6;
+   text-decoration: underline;
+}
+/*contents--------------*/
 #container {
     background-color: white;
 }
@@ -46,37 +59,39 @@ caption {
     text-transform: uppercase;
 }
 
-.post	{
+.post {
     border-style: outset;
-	padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
-    
+
 }
 
-img{
+img {
     display: hidden;
+    max-width: 100%;
 }
 
 /*Headers------------------------------------*/
-h1	{
-	color: #0063A6;
-	font-size: 36px;
-	line-height: 50px;
-    margin: 0px;
-}
-h2	{
-	font-size: 24px;
-	line-height: 35px;
-	color: #0063A6;
-    margin: 0px;
-}
-h3 	{
-	color: #F14A29;
-	font-size: 20px;
-	line-height: 30px;
+h1 {
+    color: #0063A6;
+    font-size: 36px;
+    line-height: 50px;
     margin: 0px;
 }
 
+h2 {
+    font-size: 24px;
+    line-height: 35px;
+    color: #0063A6;
+    margin: 0px;
+}
+
+h3 {
+    color: #F14A29;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px;
+}
 
 /*Navigation---------------------------------*/
 
@@ -85,31 +100,27 @@ h3 	{
     text-align: center;
 }
 
-#nav ul{
+#nav ul {
     list-style-type: none;
     padding: 0;
-    
+
 }
 
-#nav .selected{
+#nav .selected {
     font-weight: bold;
 }
 
-@media (min-width: 60em) {
-    #nav {
-        float: left;
-        width: 180px;
-        padding-left: 2%;
-    }
+#nav a :hover{
+    text-decoration: underline;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    #nav {
-        float: left;
-        width: 180px;
-        padding-left: 2%;
-    }
+#nav a {
+    border-radius: 5px;
+    border: 2px solid #507786;
+    color:black;
+    display: block;
 }
+
 /*tables---------------------------------------*/
 table {
     border-collapse: collapse;
@@ -138,11 +149,30 @@ small {
     line-height: 15px;
 }
 
-@media only screen and (min-width: 1100px){
+@media (min-width: 60em) {
+    #nav {
+        float: left;
+        width: 180px;
+        padding-left: 2%;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #nav {
+        float: left;
+        width: 180px;
+        padding-left: 2%;
+    }
+}
+
+@media (min-width: 1100px) {
     table {
         display: contents;
     }
-    img{
+}
+
+@media (max-width: 1100px) {
+    img {
         display: contents;
     }
 }

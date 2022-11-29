@@ -32,7 +32,6 @@
 							<!--Links to the Index page/tutorial page-->
 							<a href="tutorial.html">Tutorial</a>
 						</li>
-
 						<li>
 							<!--This links to the contact me page-->
 							<a href="contact.html">Contact me</a>
@@ -49,6 +48,28 @@
 						<h3>
 							Week 6
 						</h3>
+						<p>Published on <time datetime="2022-11-29">
+								<strong>November 29, 2022</strong>
+							</time>
+							<p>
+								In this week we looked at making the website responsive to the different types of
+								devices that are able to view the site, we do this by inputting <code>viewport</code> in
+								the head of the page.<br>
+								This is done so that the page scales to the devices screen, we should develop websites
+								as "mobile first".
+							</p>
+							<p>Furthermore we also looked at media queries in our CSS stylesheet, as an example we will
+								use the table, the CSS query will take the information about the screen size of the
+								device and compare that to the size that we have set in the query, in my case I have set
+								up the table so that the content is not displayed when the screen gets to small, this is
+								done using the code:<br>
+								<code>
+									@media (max-width: 1100px){<br>
+									table {<br>
+									display: contents;<br>
+									}<br>
+								</code>
+							</p>
 					</article>
 					<!--Week 5 post-->
 					<article class="post">
@@ -65,13 +86,13 @@
 							<code>
 								body{<br>
 								font-family: georgia, "times new roman", Times, serif;<br>
-								}<br>
+								}
 							</code>
-							<p>To ensure that text can be correctly displayed on all devices that are able to
-								connect to the website, you should always include system default fonts so that in
-								the event that the font is unable to be retrieved from the web server or fonts source
-								we are still able to display content that should be on the page.
-							</p>
+						</p>
+						<p>To ensure that text can be correctly displayed on all devices that are able to
+							connect to the website, you should always include system default fonts so that in
+							the event that the font is unable to be retrieved from the web server or fonts source
+							we are still able to display content that should be on the page.
 						</p>
 					</article>
 					<!--Week 4 post-->
@@ -309,24 +330,22 @@
 							<!--This provides a link to the user so that they are able to access MDN Web docs-->
 							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN web docs</a>.
 						</p>
-						<figure>
-							<!--This provides a link to the user so that they are able to access MDN Web docs-->
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">
-								<img src="images/MDN_Web_Docs.png">
-							</a>
-						</figure>
 					</article>
 
-					<a id=reference>
-						<h3>References</h3>
+					<h3>References</h3>
 					</a>
 					<ul>
 						<li><a
 								href="https://fonts.google.com/specimen/Catamaran?category=Sans+Serif,Display,Handwriting,Monospace">Google
 								Fonts (Catamaran)</li>
-						<li><a href="https://www.w3schools.com/html/default.asp">w3schools</a></li>
+						<li><a href="https://www.w3schools.com/html/default.asp">w3schools (HTML)</a></li>
 						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs (HTML)</a></li>
 						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs (CSS)</a></li>
+						<li><a href="https://www.w3schools.com/html/html_links_colors.asp">w3schools (HTML links -
+								different colors, HTML Link Color)</a></li>
+						<li><a href="https://www.w3schools.com/css/css3_borders.asp">w3schools (CSS Rounded corners)</a>
+						</li>
+						<li><a href="https://www.december.com/html/spec/colorshades.html">December (color shades)</a></li>
 					</ul>
 
 					<p>
