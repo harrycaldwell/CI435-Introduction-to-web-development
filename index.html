@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+		<link href="images/favicon.ico" rel="icon" type="image/ico">
 		<title>Learning Journal</title>
 		<meta name="viewport" content="width=device-width, initial scale=1">
 		<link href="css/indexstyle.css" rel="stylesheet">
@@ -13,15 +14,12 @@
 	<body>
 		<div id="container">
 			<!--This is the title that is displayed at the top of the page-->
-			<!--<div id="header">-->
-			<a id="top"></a>
-			<div id="banner">
-				<img alt="" src="images/Banner2.jpg" class="banner-fluid">
+			<div id="header">
+				<a id="top"></a>
+				<h1>
+					CI435 web project
+				</h1>
 			</div>
-			<!--<h1>
-					<u>CI435 web project</u>
-				</h1>-->
-			<!--</div>-->
 			<div id="content">
 				<!--This is the main navigation for the learning journal webpage-->
 				<div id="nav">
@@ -51,14 +49,43 @@
 							Week 7
 						</h3>
 						<p>Published on <time datetime="2022-12-04">
-								<strong>December 4, 2022</strong>
-							</time>
-							<p>
-								This week, we looked more into responsive websites, specifically responsive media, and
-								how we can use CSS to control how images and videos appear on the page when the viewport
-								is being manipulated by the user, to demonstrate this, the header of the page will be an
-								image that will resize when the viewport is being changed, this is done using this code:
-							</p>
+								<strong>December 4, 2022</strong></time></p>
+						</time>
+						<iframe src="https://www.youtube.com/embed/6stlCkUDG_s?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_"
+							allowfullscreen
+							title="Sea waves & beach drone video | Free HD Video - no copyright"></iframe>
+						<p>
+							This week, we looked more into responsive websites, specifically responsive media, and
+							how we can use CSS to control how images and videos appear on the page when the viewport
+							is being manipulated by the user, to demonstrate this, a video will be placed in this post
+							and should be able to change the way it appears to the user when the viewport is
+							manipulated.
+						</p>
+						<p>
+							To make the Video fit in the post I used the code:<br>
+							<img src="images/screenshot_iframe_code.png" alt="This is a screenshot of the code used to make the video fit in the posts which is: .post > iframe {
+								object-fit: contain;
+								display: inline;
+								float: left;
+								width:100%;
+								max-width: 400px;
+								height: auto;
+								aspect-ratio: 2/1;
+								border: none;
+								margin : 5px 5px 5px 0;
+								padding-right:10px;
+								padding-bottom:5px;
+							}">
+						</p>
+						<p>And to make the videos responsive I used the media query :<br>
+							<code>@media(max-width:992px){<br>
+								.post > iframe{<br>
+								display: contents;<br>
+								}<br>
+								}<br>
+								This allows the video to be manipulated by the viewport meaning that it will get smaller
+								along with the screen until the screen is so small the video will not be shown.</p>
+						</code>
 					</article>
 					<!--Week 6 post-->
 					<article class="post">
@@ -192,7 +219,8 @@
 							make
 							the description list above so that an example is here to be seen</p>
 						<figure>
-							<img alt="" src="images/screenshot_2_list_code.png">
+							<img alt="This screenshot is the capture of the code that was used to create the description list"
+								src="images/screenshot_2_list_code.png">
 							<figcaption>This is a screenshot of the code used to create the description list
 								that is
 								found in the third entry of the Learning journal. <br>
@@ -335,7 +363,8 @@
 							implemented into the code</p>
 						<figure>
 							<!--This links to a screenshot that is stored on the web server-->
-							<img alt="" src="images/screenshot_1_list_code.png">
+							<img alt="This is a screenshot of the code that is used to create the list in the first entry of the learning journal"
+								src="images/screenshot_1_list_code.png">
 							<figcaption>This is a screenshot of the code used to create the list that is found
 								in
 								the first entry of the Learning journal. <br>
@@ -392,7 +421,7 @@
 					</article>
 
 					<h3>References</h3>
-					
+
 					<ul>
 						<li><a
 								href="https://fonts.google.com/specimen/Catamaran?category=Sans+Serif,Display,Handwriting,Monospace">Google
@@ -413,6 +442,8 @@
 						</li>
 						<li><a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO.org (ISO-8601
 								date standard)</a></li>
+						<li><a href="https://www.favicon.cc/?action=icon&file_id=979835">Favicon (used under Creative
+								Commons)</a></li>
 					</ul>
 
 					<p>
