@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Contact</title>
-		<link href="css/indexstyle.css" rel="stylesheet" />
+		<link href="images/favicon.ico" rel="icon" type="image/ico">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<link href="css/indexstyle.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+		<link href="css/normalize.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -27,13 +31,40 @@
 					<h2>Contacts Page</h2>
 
 					<p>Want to contact me?</p>
+					<form id="Contact-Info">
+						<fieldset>
+							<legend>Your contact details</legend>
+							<label for="name">Name <em>(required)</em></label>
+							<input type="text" id="name" required placeholder="Forename+Surname">
+							<label for="email">Email address <em>(required)</em></label>
+							<input type="text" id="email">
+							<label for="tel">Phone Number</label>
+							<input type="tel" id="tel">
+						</fieldset>
+					</form>
 
-					<p>Please use the link below:</p>
-					<u><a href="mailto:H.caldwell2@uni.brighton.ac.uk">Email Harry Caldwell</a></u>
+					<fieldset>
+						<legend>Please input your message here!</legend>
+						<label for="message">Message: </label>
+						<textarea id="message" required></textarea>
+					</fieldset>
+
+					<fieldset>
+						<legend>Would you like to hear back?</legend>
+						<label id="infoYes" for="information-yes">
+							<input type="radio" id="information-yes" name="information" value="yes">Yes
+							Please!</label>
+						<label id="infoNo" for="information-no">
+							<input type="radio" id="information-no" name="information" value="no" checked>No
+							Thanks</label>
+					</fieldset>
+
+					<input type="submit" id="contact sub" value="Click to send">
+
 				</div>
 			</div>
 
-			<div id="footer">&copy; 2022, Harry Caldwell</div>
+			<div id="footer"></div>
 		</div>
 	</body>
 

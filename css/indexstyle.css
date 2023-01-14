@@ -5,6 +5,7 @@ body {
     text-align: justify;
     font-size: 1.2em;
 }
+
 /*header-------------*/
 #header {
     background-color: #66CCFF;
@@ -12,9 +13,10 @@ body {
     padding: 10px;
 }
 
-#header h1{
-    color:black;
+#header h1 {
+    color: black;
 }
+
 /*End of header-------------*/
 #footer {
     clear: both;
@@ -28,20 +30,22 @@ body {
     margin-left: 20%;
     padding-right: 1%;
 }
+
 /*links-----------------*/
-a:link{
+a:link {
     text-decoration: none;
     color: #0090D2;
 }
 
-a:active{
-    text-decoration:underline;
+a:active {
+    text-decoration: underline;
 }
 
-a:hover{
-   color:#0063A6;
-   text-decoration: underline;
+a:hover {
+    color: #0063A6;
+    text-decoration: underline;
 }
+
 /*contents--------------*/
 #container {
     background-color: white;
@@ -62,28 +66,47 @@ caption {
     border-style: outset;
     padding-left: 10px;
     padding-right: 10px;
-    overflow:hidden;
+    overflow: hidden;
 
 }
-.post > iframe {
+
+.post>iframe {
     object-fit: contain;
     display: inline;
     float: left;
-    width:100%;
+    width: 100%;
     max-width: 400px;
     height: auto;
     aspect-ratio: 2/1;
     border: none;
-    margin : 5px 5px 5px 0;
-    padding-right:10px;
-    padding-bottom:5px;
+    margin: 5px 5px 5px 0;
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 img {
     display: hidden;
-    max-width:100%;
+    max-width: 100%;
 }
 
+/*Forms--------------------------------------*/
+label {
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+textarea {
+    width: 50%;
+    height: 25%;
+}
+
+#infoYes {
+    float: left;
+    padding-right: 30px;
+}
 /*Headers------------------------------------*/
 h1 {
     color: #0063A6;
@@ -123,14 +146,14 @@ h3 {
     font-weight: bold;
 }
 
-#nav a :hover{
+#nav a :hover {
     text-decoration: underline;
 }
 
 #nav a {
     border-radius: 5px;
     border: 2px solid #507786;
-    color:black;
+    color: black;
     display: block;
 }
 
@@ -161,6 +184,7 @@ small {
     font-size: 14px;
     line-height: 15px;
 }
+
 /*media queries---------------------------------*/
 @media (min-width: 60em) {
     #nav {
@@ -190,8 +214,8 @@ small {
     }
 }
 
-@media(max-width:992px){
-    .post > iframe{
+@media(max-width:992px) {
+    .post>iframe {
         display: contents;
     }
 }
