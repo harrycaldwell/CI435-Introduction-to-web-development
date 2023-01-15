@@ -85,7 +85,6 @@ caption {
 }
 
 img {
-    display: hidden;
     max-width: 100%;
 }
 
@@ -131,8 +130,7 @@ h3 {
 
 /*Navigation---------------------------------*/
 
-#nav {
-    float: top;
+#nav {  
     text-align: center;
 }
 
@@ -194,7 +192,7 @@ small {
     }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
     #nav {
         float: left;
         width: 180px;
