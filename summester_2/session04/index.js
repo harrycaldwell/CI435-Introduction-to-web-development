@@ -11,4 +11,29 @@ for (let i = 0; i <str.length;i++){
         count++;
     }
 }
-console.log(count);
+console.log(count);// prints 6
+
+//find the positions of "m" in the str
+
+for(let i = 0; i<str.length;i++){
+    if(str[i] == "m"){
+        console.log(i);
+    }
+}
+
+//reversing var str and printing it to the screen
+let reverse = "";
+for(let i = str.length-1; i>=0;i--){
+    reverse += str[i];
+}
+console.log(reverse);
+
+//This takes the URL and uses the if statement to log to the console if the URL is secure, insecure or local
+var url = window.location.href;
+if (url.startsWith("http:")){
+    console.log("This is an insecure website");
+}else if (url.startsWith("https:")){
+    console.log("This is a secure website");
+}else if (url.startsWith("file:")){
+    console.log("This is a local file");
+}
