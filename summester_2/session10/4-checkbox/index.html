@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 10 Example Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h2>4) Read value of checkbox elements element</h2>
+    <form id="fruitFrm"> 
+      <fieldset> 
+        <legend>Select one or more:</legend> 
+        <input type="checkbox" id="c1" value="apple"> 
+        <label for="c1">Apple</label> 
+        <input type="checkbox" id="c2" value="orange"> 
+        <label for="c2">Orange</label> 
+        <input type="checkbox" id="c3" value="banana">
+        <label for="c3">Banana</label> <br><br> 
+        <button type="button" id="selBtn">Get checked values</button>
+      </fieldset>
+    </form>
+    <p> Checked fruits: <span id="output"></span></p> 
+</body>
+
+</html>

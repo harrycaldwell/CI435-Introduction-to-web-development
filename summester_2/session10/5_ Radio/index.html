@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 10 Example Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h2>5) Read value of radio elements</h2>
+    <form id="fruitFrm"> 
+      <fieldset> 
+        <legend>Favourite fruit:</legend> 
+        <input type="radio" id="r1" value="apple" name=fruits> 
+        <label for="r1">Apple</label> 
+        <input type="radio" id="r2" value="orange"name=fruits> 
+        <label for="r2">Orange</label> 
+        <input type="radio" id="r3" value="banana"name=fruits>
+        <label for="r3">Banana</label> 
+        <button type="button" id="selBtn">Get selected value</button>
+      </fieldset>
+    </form>
+    <p> Selected fruits: <span id="output"></span></p>       
+</body>
+
+</html>
